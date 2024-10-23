@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de idimas</title>
+</head>
+<body>
+    <h1>Indetificador de Nacionalidade</h1>
+    De qual país você é? <input type="text" name="txtlig" id="txtlig">
+    <input type="button" value="Enter" onclick="indetificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function indetificar() {
+            var txl = window.document.getElementById('txlig')
+            var res = window.document.getElementById('res')
+            var idi = Text(txl)
+            if (idi != 'Brasil') {
+                res.innerHTML('<p>Você é <strong>ESTRANGEIRO</strong>')
+            } else {
+                res.innerHTML('<p>Você é <strong>BRASILEIRO</strong>')
+                }
+        }
+    </script>
+    
+</body>
+</html>
